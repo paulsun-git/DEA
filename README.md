@@ -2,7 +2,7 @@
 ## Project Introduction
 This project is an EDA (Exploratory Data Analysis) project, designed to mine the hidden patterns, abnormal features and variable correlations behind the dataset through a series of data processing, visualization and statistical analysis operations, so as to provide reliable data support for subsequent modeling and decision-making. Using Python as the main development language, combined with commonly used data analysis libraries such as pandas, numpy, matplotlib and seaborn, the project realizes the full-process automation from data loading, cleaning, preprocessing to visualization analysis, which is both easy to use and scalable, and suitable for rapid exploratory analysis of various structured datasets.
 The schematic diagram of the core process of the project is as follows:
-![EDA Project Core Process](results/DEA.png)<!-- The storage location of the sample image is explained in detail in the "Project Structure and Usage" section below -->
+![EDA Project Core Process](results/DEA.jpg)<!-- The storage location of the sample image is explained in detail in the "Project Structure and Usage" section below -->
 ## Dataset
 The dataset used in this project is 【Specific Dataset Name, e.g.: A Certain Industry User Behavior Dataset/iris Dataset/House Price Prediction Dataset】. This dataset is mainly used for 【Explain the purpose of the dataset, e.g.: Analyzing user consumption habits, verifying the effect of classification algorithms, exploring factors affecting house prices】, including 【Number】 samples and 【Number】 feature variables, covering various data types such as 【Feature Types, e.g.: Numerical, Categorical, Time Series】.
 ### Dataset Source
