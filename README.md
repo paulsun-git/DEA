@@ -13,7 +13,7 @@ The dataset is from a public data platform. Specific link: [Dataset Source Link]
 3. Data Preprocessing: Encode categorical variables (One-Hot Encoding, Label Encoding), standardize/normalize numerical variables to eliminate the impact of dimensionality;
 ## Project Structure and Usage
 The following is a description of the core directory of the GitHub project. All directories and files are classified by function for easy reference and maintenance:
-'''
+'''bash
 EDA/                     # Project root directory
 ├── data/                # Dataset directory (stores raw data and processed data)
 │   ├── raw/             # Raw dataset (put here after downloading from the source link)
