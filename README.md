@@ -5,15 +5,25 @@ Dynamic Evidence Adjustment (DEA) is proposed to address the uncertainty quantif
 To solve this problem, DEA integrates two key components: the Adaptive Weight Adjustment (AWA) module dynamically balances the model’s optimization across classes by capturing data-based and evidence-based biases, while the Evidence-guided Memory Calibration Module (ECM) maintains class-specific evidence distributions to calibrate uncertainty, ensuring reliable results for all classes especially minorities. The schematic diagram of the core process of the project is as follows:
 
 ![The framework of Dynamic Evidence Adjustment (DEA)](results/DEA.jpg)
+
 ## Dataset
 The following six real-world datasets were used to construct imbalanced data in the experiment:
 
+### Data Source
 1. [MNIST](https://pytorch.org/vision/stable/generated/torchvision.datasets.MNIST.html): 
 2. [Fashion-MNIST](https://pytorch.org/vision/stable/generated/torchvision.datasets.FashionMNIST.html): 
 3. [CIFAR-10](https://pytorch.org/vision/stable/generated/torchvision.datasets.CIFAR10.html): 
 4. [SPOTS-10](https://github.com/Amotica/SPOTS-10):
 5. [Caltech-101](https://data.caltech.edu/records/mzrjq-6wc02):
-6. [Caltech-256](https://data.caltech.edu/records/nyy15-4j048): 
+6. [Caltech-256](https://data.caltech.edu/records/nyy15-4j048):
+
+### Data References
+[1] LeCun, Y., Bottou, L., Bengio, Y., & Haffner, P. (1998). Gradient-based learning applied to document recognition.
+[2] Xiao, H., Rasul, K., & Vollgraf, R. (2017). Fashion-MNIST: a novel image dataset for benchmarking machine learning algorithms.
+[3] Krizhevsky, A., & Hinton, G. (2009). Learning multiple layers of features from tiny images.
+[4] Atanbori, J. (2024). SPOTS-10: Animal Pattern Benchmark Dataset for Machine Learning Algorithms.
+[5] Fei-Fei, L., Fergus, R., & Perona, P. (2004, June). Learning generative visual models from few training examples: An incremental bayesian approach tested on 101 object categories.
+[6] Griffin, G., Holub, A., & Perona, P. (2007). Caltech-256 object category dataset.
 
 ## Project Structure
 The following is a description of the core directory of the GitHub project. All directories and files are classified by function for easy reference and maintenance:
