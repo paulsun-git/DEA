@@ -26,29 +26,29 @@ The following six real-world datasets were used to construct imbalanced data in 
 - Griffin, G., Holub, A., & Perona, P. (2007). Caltech-256 object category dataset.
 
 ## Project Structure
-The following is a description of the core directory of the GitHub project. All directories and files are classified by function for easy reference and maintenance:
+The following is a description of the core directory of the DEA project. All directories and files are classified by function for easy reference and maintenance:
 ```bash
 DEA/                                     # Project root directory
-├── data_processing/                     # Dataset directory (stores raw data and processed data)
-│   ├── construct-[dataset_name].py      # 
-|   ├── pre-training-[model_name].py     # 
-|   ├── count-train.py                   # 
-│   └── dc.py                            # 
-├── datasets/                            # Image storage directory (Key point: put sample images here)
-|   ├── [dataset_name]/                  # 
-|   ├── count_train.json                 # 
-│   └── Dc_[model_name].json             # Sample image (project core process diagram, can be replaced with your model image)
-├── metrics/                             # Core code directory
-│   ├── acc_auprc.py                     # Data loading script (reads raw data in the data/raw directory)
-│   ├── ece_class.py                     # Data preprocessing script (implements cleaning, encoding, standardization and other operations)
-│   ├── ece_overall.py                   # EDA analysis script (statistical analysis, feature correlation analysis)
-│   └── ood_auprc_auroc.py               # Visualization script (generates charts and saves them to the images directory)
-├── results/                             # Core code directory
-├── requirements.txt                     # Dependent library list (Python libraries required by the project and their corresponding versions)
-├── dataset_reader.py                    # Dependent library list (Python libraries required by the project and their corresponding versions)
-├── loss_funcation.py                    # Dependent library list (Python libraries required by the project and their corresponding versions)
-├── main.py                              # 
-├── model.py                             # 
-└── README.md                            # 
+├── data_processing/                     # Data preprocessing & dataset construction scripts
+│   ├── construct-[dataset_name].py      # Build imbalanced datasets for specified dataset
+|   ├── pre-training-[model_name].py     # Extract image features using frozen pre-trained models
+|   ├── count-train.py                   # Count sample numbers per class in training set
+│   └── dc.py                            # Calculate inherent classification difficulty (dc)
+├── datasets/                            # Dataset storage directory
+|   ├── [dataset_name]/                  # Raw & processed datasets
+|   ├── count_train.json                 # Class-wise sample counts of training data
+│   └── Dc_[model_name].json             # Precomputed inherent classification difficulty scores
+├── metrics/                             # Evaluation metrics scripts
+│   ├── acc_auprc.py                     # Compute classification accuracy and AU-PRC
+│   ├── ece_class.py                     # Calculate class-wise Expected Calibration Error (ECE)
+│   ├── ece_overall.py                   # Calculate overall model Expected Calibration Error (ECE)
+│   └── ood_auprc_auroc.py               # Evaluate OOD detection: AU-ROC & AU-PRC
+├── results/                             # Experimental results & inference outputs
+├── requirements.txt                     # Project dependencies and environment configuration
+├── dataset_reader.py                    # Dataset loading module
+├── loss_funcation.py                    # Custom loss functions for model training
+├── main.py                              # Main entry: model training, validation, and testing
+├── model.py                             # Model architecture and network definition
+└── README.md                            # Project documentation and user guide
 ```
 
