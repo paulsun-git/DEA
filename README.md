@@ -31,12 +31,12 @@ The following is a description of the core directory of the DEA project. All dir
 DEA/                                     # Project root directory
 ├── data_processing/                     # Data preprocessing & dataset construction scripts
 │   ├── construct-[dataset_name].py      # Build imbalanced datasets for specified dataset
-|   ├── pre-training-[model_name].py     # Extract image features using frozen pre-trained models
-|   ├── count-train.py                   # Count sample numbers per class in training set
+│   ├── pre-training-[model_name].py     # Extract image features using frozen pre-trained models
+│   ├── count-train.py                   # Count sample numbers per class in training set
 │   └── dc.py                            # Calculate inherent classification difficulty (dc)
 ├── datasets/                            # Dataset storage directory
-|   ├── [dataset_name]/                  # Raw & processed datasets
-|   ├── count_train.json                 # Class-wise sample counts of training data
+│   ├── [dataset_name]/                  # Raw & processed datasets
+│   ├── count_train.json                 # Class-wise sample counts of training data
 │   └── Dc_[model_name].json             # Precomputed inherent classification difficulty scores
 ├── metrics/                             # Evaluation metrics scripts
 │   ├── acc_auprc.py                     # Compute classification accuracy and AU-PRC
