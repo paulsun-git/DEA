@@ -28,18 +28,27 @@ The following six real-world datasets were used to construct imbalanced data in 
 ## Project Structure
 The following is a description of the core directory of the GitHub project. All directories and files are classified by function for easy reference and maintenance:
 ```bash
-EDA/                     # Project root directory
-├── data/                # Dataset directory (stores raw data and processed data)
-│   ├── raw/             # Raw dataset (put here after downloading from the source link)
-│   └── processed/       # Processed data (cleaned and preprocessed dataset for analysis)
-├── images/              # Image storage directory (Key point: put sample images here)
-│   └── eda_flow.png     # Sample image (project core process diagram, can be replaced with your model image)
-├── src/                 # Core code directory
-│   ├── data_loader.py   # Data loading script (reads raw data in the data/raw directory)
-│   ├── data_preprocess.py # Data preprocessing script (implements cleaning, encoding, standardization and other operations)
-│   ├── eda_analysis.py  # EDA analysis script (statistical analysis, feature correlation analysis)
-│   └── visualization.py # Visualization script (generates charts and saves them to the images directory)
-├── requirements.txt     # Dependent library list (Python libraries required by the project and their corresponding versions)
-└── README.md            # Project description document (current document)
+DEA/                                     # Project root directory
+├── data_processing/                     # Dataset directory (stores raw data and processed data)
+│   ├── construct-[dataset_name].py      # 
+|   ├── pre-training-[model_name].py     # 
+|   ├── count-train.py                   # 
+│   └── dc.py                            # 
+├── datasets/                            # Image storage directory (Key point: put sample images here)
+|   ├── [dataset_name]/                  # 
+|   ├── count_train.json                 # 
+│   └── Dc_[model_name].json             # Sample image (project core process diagram, can be replaced with your model image)
+├── metrics/                             # Core code directory
+│   ├── acc_auprc.py                     # Data loading script (reads raw data in the data/raw directory)
+│   ├── ece_class.py                     # Data preprocessing script (implements cleaning, encoding, standardization and other operations)
+│   ├── ece_overall.py                   # EDA analysis script (statistical analysis, feature correlation analysis)
+│   └── ood_auprc_auroc.py               # Visualization script (generates charts and saves them to the images directory)
+├── results/                             # Core code directory
+├── requirements.txt                     # Dependent library list (Python libraries required by the project and their corresponding versions)
+├── dataset_reader.py                    # Dependent library list (Python libraries required by the project and their corresponding versions)
+├── loss_funcation.py                    # Dependent library list (Python libraries required by the project and their corresponding versions)
+├── main.py                              # 
+├── model.py                             # 
+└── README.md                            # 
 ```
 
