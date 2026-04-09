@@ -51,4 +51,7 @@ DEA/                                     # Project root directory
 ├── model.py                             # Model architecture and network definition
 └── README.md                            # Project documentation and user guide
 ```
-
+To run the project, follow the steps below in order:
+1. Obtain the required datasets and place them in the corresponding subdirectories under the `datasets/` folder.
+2. Sequentially run the scripts in the `data_processing/` directory to construct imbalanced datasets.
+3. Execute `python3 main.py` in the project root directory to start model training and testing.
