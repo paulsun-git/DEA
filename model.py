@@ -10,8 +10,8 @@ class ImEDL(nn.Module):
     """
     def __init__(self, channels, num_classes, mem_h):
         super(ImEDL, self).__init__()
-        torch.manual_seed(926)
-        torch.cuda.manual_seed(926)
+        torch.manual_seed(925)
+        torch.cuda.manual_seed(925)
 
         self.net = CnnNet(channels=channels, num_classes=num_classes)
         # self.net = ResNet50(channels=channels, num_classes=num_classes)
