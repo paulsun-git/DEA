@@ -10,12 +10,12 @@ To solve this problem, DEA integrates two key components: the Adaptive Weight Ad
 The following six real-world datasets were used to construct imbalanced data in the experiment:
 
 ### Data Source
-1. [MNIST](https://pytorch.org/vision/stable/generated/torchvision.datasets.MNIST.html): 
-2. [Fashion-MNIST](https://pytorch.org/vision/stable/generated/torchvision.datasets.FashionMNIST.html): 
-3. [CIFAR-10](https://pytorch.org/vision/stable/generated/torchvision.datasets.CIFAR10.html): 
-4. [SPOTS-10](https://github.com/Amotica/SPOTS-10):
-5. [Caltech-101](https://data.caltech.edu/records/mzrjq-6wc02):
-6. [Caltech-256](https://data.caltech.edu/records/nyy15-4j048):
+1. [MNIST](https://pytorch.org/vision/stable/generated/torchvision.datasets.MNIST.html): A classic handwritten digit recognition dataset containing 70,000 28×28 grayscale images of 10 digit classes (0–9), widely used for benchmarking image classification models.
+2. [Fashion-MNIST](https://pytorch.org/vision/stable/generated/torchvision.datasets.FashionMNIST.html): A benchmark dataset of 70,000 28×28 grayscale images covering 10 categories of fashion products, designed as a direct replacement for the original MNIST dataset.
+3. [CIFAR-10](https://pytorch.org/vision/stable/generated/torchvision.datasets.CIFAR10.html): A standard small-image classification dataset with 60,000 32×32 RGB color images distributed across 10 object classes, commonly used for evaluating deep learning models.
+4. [SPOTS-10](https://github.com/Amotica/SPOTS-10): A nighttime animal pattern recognition dataset consisting of 10 categories of grayscale images, specifically constructed for low-light and animal detection tasks.
+5. [Caltech-101](https://data.caltech.edu/records/mzrjq-6wc02): A widely used object recognition dataset with 101 object categories, containing moderate-sized real-world images for general visual recognition research.
+6. [Caltech-256](https://data.caltech.edu/records/nyy15-4j048): An extended and improved version of Caltech-101, featuring 256 object categories with more images and greater intra-class variation.
 
 ### Data References
 - LeCun, Y., Bottou, L., Bengio, Y., & Haffner, P. (1998). Gradient-based learning applied to document recognition.
