@@ -1,8 +1,10 @@
 # Dynamic Evidence Adjustment (DEA)
 ## Introduction
-This project is an EDA (Exploratory Data Analysis) project, designed to mine the hidden patterns, abnormal features and variable correlations behind the dataset through a series of data processing, visualization and statistical analysis operations, so as to provide reliable data support for subsequent modeling and decision-making. Using Python as the main development language, combined with commonly used data analysis libraries such as pandas, numpy, matplotlib and seaborn, the project realizes the full-process automation from data loading, cleaning, preprocessing to visualization analysis, which is both easy to use and scalable, and suitable for rapid exploratory analysis of various structured datasets.
-The schematic diagram of the core process of the project is as follows:
-![EDA Project Core Process](results/DEA.jpg)<!-- The storage location of the sample image is explained in detail in the "Project Structure and Usage" section below -->
+Dynamic Evidence Adjustment (DEA) is proposed to address the uncertainty quantification issue of Evidential Deep Learning (EDL) on imbalanced datasets. EDL is a widely used paradigm for uncertainty quantification with minimal computational overhead, but it performs poorly on imbalanced data, where minority classes (with fewer samples) suffer from unstable optimization and abnormally high uncertainty even for correctly classified samples, leading to the Reliable Uncertainty Quantification for Imbalanced Data (RUQID) problem.
+
+To solve this problem, DEA integrates two key components: the Adaptive Weight Adjustment (AWA) module dynamically balances the model’s optimization across classes by capturing data-based and evidence-based biases, while the Evidence-guided Memory Calibration Module (ECM) maintains class-specific evidence distributions to calibrate uncertainty, ensuring reliable results for all classes especially minorities. The schematic diagram of the core process of the project is as follows:
+
+![DEA Project Core Process](results/DEA.jpg)<!-- The storage location of the sample image is explained in detail in the "Project Structure and Usage" section below -->
 ## Dataset
 The dataset used in this project is 【Specific Dataset Name, e.g.: A Certain Industry User Behavior Dataset/iris Dataset/House Price Prediction Dataset】. This dataset is mainly used for 【Explain the purpose of the dataset, e.g.: Analyzing user consumption habits, verifying the effect of classification algorithms, exploring factors affecting house prices】, including 【Number】 samples and 【Number】 feature variables, covering various data types such as 【Feature Types, e.g.: Numerical, Categorical, Time Series】.
 ### Data Source
