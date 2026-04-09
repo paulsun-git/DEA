@@ -4,15 +4,17 @@ Dynamic Evidence Adjustment (DEA) is proposed to address the uncertainty quantif
 
 To solve this problem, DEA integrates two key components: the Adaptive Weight Adjustment (AWA) module dynamically balances the model’s optimization across classes by capturing data-based and evidence-based biases, while the Evidence-guided Memory Calibration Module (ECM) maintains class-specific evidence distributions to calibrate uncertainty, ensuring reliable results for all classes especially minorities. The schematic diagram of the core process of the project is as follows:
 
-![DEA Project Core Process](results/DEA.jpg)<!-- The storage location of the sample image is explained in detail in the "Project Structure and Usage" section below -->
+![The framework of Dynamic Evidence Adjustment (DEA)](results/DEA.jpg)
 ## Dataset
-The dataset used in this project is 【Specific Dataset Name, e.g.: A Certain Industry User Behavior Dataset/iris Dataset/House Price Prediction Dataset】. This dataset is mainly used for 【Explain the purpose of the dataset, e.g.: Analyzing user consumption habits, verifying the effect of classification algorithms, exploring factors affecting house prices】, including 【Number】 samples and 【Number】 feature variables, covering various data types such as 【Feature Types, e.g.: Numerical, Categorical, Time Series】.
-### Data Source
-The dataset is from a public data platform. Specific link: [Dataset Source Link](https://xxx.xxx.xxx) (e.g., Kaggle, UCI Machine Learning Repository, domestic public data platforms, etc., replace with the actual link). You can directly download the original dataset through the link, or automatically pull it through the script provided by the project.
-### Data Processing
-1. Data Loading: Use pandas to read the original dataset (supporting csv, xlsx, txt and other formats), and handle problems such as encoding anomalies and path anomalies;
-2. Data Cleaning: Eliminate features with excessively high missing value ratio (e.g., missing rate > 30%), fill the remaining missing values with mean/median/mode (for numerical types) and .mode() (for categorical types); Handle outliers, identify abnormal samples through box plots and Z-score methods, and choose to eliminate or correct them according to business scenarios;
-3. Data Preprocessing: Encode categorical variables (One-Hot Encoding, Label Encoding), standardize/normalize numerical variables to eliminate the impact of dimensionality;
+The following six real-world datasets were used to construct imbalanced data in the experiment:
+
+1. [MNIST](https://pytorch.org/vision/stable/generated/torchvision.datasets.MNIST.html): 
+2. [Fashion-MNIST](https://pytorch.org/vision/stable/generated/torchvision.datasets.FashionMNIST.html): 
+3. [CIFAR-10](https://pytorch.org/vision/stable/generated/torchvision.datasets.CIFAR10.html): 
+4. [SPOTS-10](https://github.com/Amotica/SPOTS-10):
+5. [Caltech-101](https://data.caltech.edu/records/mzrjq-6wc02):
+6. [Caltech-256](https://data.caltech.edu/records/nyy15-4j048): 
+
 ## Project Structure
 The following is a description of the core directory of the GitHub project. All directories and files are classified by function for easy reference and maintenance:
 ```bash
