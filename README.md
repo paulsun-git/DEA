@@ -4,7 +4,7 @@ Dynamic Evidence Adjustment (DEA) is proposed to address the uncertainty quantif
 
 To solve this problem, DEA integrates two key components: the Adaptive Weight Adjustment (AWA) module dynamically balances the model’s optimization across classes by capturing data-based and evidence-based biases, while the Evidence-guided Memory Calibration Module (ECM) maintains class-specific evidence distributions to calibrate uncertainty, ensuring reliable results for all classes especially minorities. The schematic diagram of the core process of the project is as follows:
 
-![The framework of Dynamic Evidence Adjustment (DEA)](results/DEA.webp)
+![The framework of Dynamic Evidence Adjustment (DEA)](results/DEA.png)
 
 ## Dataset
 The following six real-world datasets were used to construct imbalanced data in the experiment:
